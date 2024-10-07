@@ -1,0 +1,155 @@
+/*----- style générale -----*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    overflow: hidden;
+  }
+
+/*----- navbar -----*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    max-height: 50px;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    flex-direction:row;
+    z-index: 10;
+}
+
+.img-resto {
+    height: 500px;
+    margin-left: -100px;
+}
+
+.navbar-navigation {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: -200px;
+}
+
+.navbar-navigation li {
+    list-style: none; 
+}
+
+.navbar-navigation a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-navigation a:hover {
+    color: rgb(131, 131, 131); 
+  }
+
+.logo-reseaux {
+    display: flex;
+    align-items: center;
+}
+
+.logo-reseaux li {
+    list-style: none;
+    margin-left: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.logo-reseaux li:hover {
+    transform: translateY(-5px); /* L'image est légèrement élevée de 5px */
+  }
+
+.logo-reseaux img {
+    width: 30px; 
+    height: auto;
+}
+/*----- carousel header -----*/
+
+.carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+  .carousel img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+
+input[name="carousel"] {
+    display: none;
+}
+
+  
+  #item1:checked ~ .img1,
+  #item2:checked ~ .img2,
+  #item3:checked ~ .img3 {
+    opacity: 1;
+}
+
+  
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+  
+.radio-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+
+.radio-buttons label {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*----- text au centre -----*/
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    z-index: 10;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}

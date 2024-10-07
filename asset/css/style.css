@@ -67,7 +67,7 @@ header {
 }
 
 .logo-reseaux li:hover {
-    transform: translateY(-5px); /* L'image est légèrement élevée de 5px */
+    transform: translateY(-5px); 
   }
 
 .logo-reseaux img {
@@ -142,6 +142,11 @@ input[name="carousel"] {
 
 /*----- text au centre -----*/
 
+@font-face {
+    font-family: Allura;
+    src: url(/asset/font/Allura\,Poppins.zip);
+}
+
 .welcome-text {
     position: absolute;
     top: 50%;
@@ -152,4 +157,8 @@ input[name="carousel"] {
     font-size: 2em;
     z-index: 10;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.welcome-text h2 {
+    font-family: Allura;
 }

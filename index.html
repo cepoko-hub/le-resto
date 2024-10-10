@@ -17,9 +17,9 @@
           <img src="asset/img/resto.png" alt="" class="img-resto">
 
           <ul class="navbar-navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Menu</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#reservation">Reservations</a></li>
+            <li><a href="#menu">Menu</a></li>
             <li><a href="#">Blog</a></li>
             <li><a href="#">pages</a></li>
             <li><a href="#">shop</a></li>
@@ -34,7 +34,7 @@
         </nav>
     
        
-        <div class="welcome-text">
+        <div class="welcome-text" id="home">
           <h2>Welcome to</h2>
           <h1>The Resto</h1>
           <img src="asset/img/ic-plate-big.png" alt="">
@@ -90,7 +90,7 @@
 
         <!-- /* ---- menu ---- */ -->
 
-        <div class="menu-container">
+        <div class="menu-container" id="menu">
           <h2>Discover</h2>
           <img src="/asset/img/ic-plate.png" alt="">
           <div class="navigation">
@@ -175,47 +175,131 @@
                     </div>
                     <div class="price">$25</div>
                 </li>
-                </ul>
-              <div>        
-            </div>
+                </ul>       
+              </div>
+          </div>
         </div>
-      </div>
       
       <!-- questionaire -->
 
-      <div class="questionaire">
-        <div class="left-panel">
-            <h2>Time <span class="highlight">OPEN</span></h2>
-            <div class="schedule">
-                <p>MONDAY - FRIDAY</p>
-                <p>7AM - 11AM (Breakfast)</p>
-                <p>11AM - 10PM (Lunch/Dinner)</p>
+        <div class="questionaire" id="reservation">
+          <div class="left-panel">
+            <div class="border-questionaire">
+             <h2>Time</h2>
+              <h3>open</h3>
+              <img src="asset/img/ic-plate.png" alt="">
+              <div class="schedule">
+                  <p class="yellow-font">MONDAY - FRIDAY</p>
+                  <p>7AM - 11AM (Breakfast)</p>
+                  <p>11AM - 10PM (Lunch/Dinner)</p>
+              </div>
+              <div class="schedule">
+                  <p class="yellow-font">SATURDAY / SUNDAY</p>
+                  <p>8AM - 1PM (Brunch)</p>
+                  <p>1PM - 9PM (Lunch/Dinner)</p>
+              </div>
+              <p class="contact"  class="yellow-font">+15 890 979 25 52</p>
             </div>
-            <div class="schedule">
-                <p>SATURDAY / SUNDAY</p>
-                <p>8AM - 1PM (Brunch)</p>
-                <p>1PM - 9PM (Lunch/Dinner)</p>
-            </div>
-            <p class="contact">+15 890 979 25 52</p>
-        </div>
+          </div>
 
-        <div class="right-panel">
-            <h2><span class="highlight">Reservation</span> ONLINE BOOKING</h2>
-            <form>
-                <div class="form-row">
+          <div class="right-panel">
+              <h2>reservation</h2>
+              <h3>online booking</h3>
+              <img src="asset/img/ic-plate.png" alt="">
+              <form>
+                  <div class="form-row">
                     <input type="number" placeholder="People">
                     <input type="date" placeholder="Date">
                     <input type="time" placeholder="Time">
-                </div>
-                <div class="form-row">
+                  </div>
+                  <div class="form-row">
                     <input type="text" placeholder="Name">
                     <input type="tel" placeholder="Phone">
                     <input type="email" placeholder="Email">
-                </div>
+                  </div>
                 <button type="submit">BOOK NOW</button>
-            </form>
+              </form>
+            </div>
+          </div>
+
+    <!-- ----- gallery ----- -->
+
+          <div class="gallery-container">
+            <h2>Discover</h2>
+            <h3>our gallery</h3>
+            <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="asset/img/dish-gallery-01.jpg" alt="Food Item 1">
+          </div>
+          <div class="gallery-item">
+            <img src="asset/img/dish-gallery-02.jpg" alt="Food Item 2">
+          </div>
+          <div class="gallery-item">
+            <img src="asset/img/dish-gallery-03.jpg" alt="Food Item 3">
+          </div>
+          <div class="gallery-item">
+            <img src="asset/img/dish-gallery-04.jpg" alt="Food Item 4">
+          </div>
+          <div class="gallery-item">
+            <img src="asset/img/dish-gallery-05.jpg" alt="Food Item 5">
+          </div>
+          <div class="gallery-item">
+            <img src="asset/img/dish-gallery-06.jpg" alt="Food Item 6">
+          </div>
         </div>
-    </div>
+      </div>
+      <button class="view-all-btn">VIEW ALL GALLERY</button>
+
+      <!-- upcomming event -->
+
+      <div class="event-container">
+        <div class="header">
+          <h2>Upcoming</h2>
+          <h3>our comming</h3>
+          <img src="asset/img/ic-plate.png" alt="">
+        </div>
+        <div class="event-grid">
+          <div class="event-card">
+            <img src="event1.jpg" alt="Event 1">
+              <div class="event-info">
+                <div class="date-box">
+                  <span>08</span><br>July
+                </div>
+                <div class="event-details">
+                  <h3>Night Inspirescu Party</h3>
+                  <p>@Restaurant Resto | 10:00 pm - 06:00 am</p>
+                  <a href="#" class="buy-ticket">BUY TICKETS</a>
+                </div>
+              </div>
+            </div>
+            <div class="event-card">
+              <img src="event2.jpg" alt="Event 2">
+              <div class="event-info">
+                <div class="date-box">
+                  <span>08</span><br>July
+                </div>
+                <div class="event-details">
+                  <h3>Dj Robag Ruhme</h3>
+                  <p>@Restaurant Resto | 10:00 pm - 06:00 am</p>
+                  <a href="#" class="buy-ticket">BUY TICKETS</a>
+                </div>
+              </div>
+            </div>
+          <div class="event-card">
+            <img src="event3.jpg" alt="Event 3">
+            <div class="event-info">
+              <div class="date-box">
+                <span>08</span><br>July
+              </div>
+              <div class="event-details">
+                <h3>Thousands celebrities at Johnnie Night</h3>
+                <p>@Restaurant Resto | 10:00 pm - 06:00 am</p>
+                <a href="#" class="buy-ticket">BUY TICKETS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       </main>
       
